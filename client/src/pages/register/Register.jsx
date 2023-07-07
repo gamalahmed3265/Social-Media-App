@@ -20,7 +20,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:3300/api/auth/register", inputs);
+      await axios.post("http://localhost:8800/api/auth/register", inputs);
     } catch (err) {
       setErr(err.response.data);
     }
@@ -39,9 +39,9 @@ const Register = () => {
             consequatur.
           </p>
           <span>Do you have an account?</span>
-          {/* <Link to="/login">
+          <Link to="/login">
             <button>Login</button>
-          </Link> */}
+          </Link>
         </div>
         <div className="right">
           <h1>Register</h1>
